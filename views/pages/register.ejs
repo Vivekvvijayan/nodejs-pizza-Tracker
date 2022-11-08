@@ -1,0 +1,40 @@
+<% layout('../base.ejs') -%>
+
+
+<div class="container w-100 min-h-screen flex justify-center items-center bg-slate-200">
+    <form action="/register" method="POST">
+
+        <div class="form flex flex-col justify-evenly bg-white w-[400px] h-[450px] p-4 rounded-xl" >
+            <% if(messages.error) { %>
+                <span class="text-sm text-center text-red-500 italic"><%= messages.error %></span>
+               <% } %> 
+            <h1 class="text-center font-bold drop-shadow-sm text-2xl">Register</h1>
+
+   <div class="inputs h-[300px] flex flex-col justify-evenly">
+    <div class="email flex flex-col">
+
+        <label for="email"  class="pb-2 font-semibold">Username</label>
+        <input type="text" id="email" class="outline-none h-10 shadow shadow-gray-500/40 p-3" name="username" autocomplete="off">
+    </div>
+    <div class="email flex flex-col">
+
+        <label for="email"  class="pb-2 font-semibold">Email</label>
+        <input type="email" id="email" class="outline-none h-10 shadow shadow-gray-500/40 p-3" name="email" autocomplete="off">
+    </div>
+    <div class="password flex flex-col pt-3">
+
+        <label for="password" class="pb-2 font-semibold">Create Password</label>
+        <input type="password" id="password"class="outline-none h-10 shadow shadow-gray-500/40 p-3"name="password"minlength=6 maxlength=10>
+    </div>
+    <div class="flex justify-around items-center mt-5">
+        <input type="submit" value="Register"class="pt-2 pb-2 pl-5 pr-5 bg-orange-500 text-white rounded-2xl cursor-pointer font-semibold">
+       <a href="/login"> <span class="text-sm text-orange-400 cursor-pointer">Login Now</span></a>
+    </div>
+   </div>
+    </div>
+
+</form>
+
+</div>
+
+    

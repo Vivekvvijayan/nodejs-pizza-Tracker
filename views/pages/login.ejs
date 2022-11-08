@@ -1,0 +1,29 @@
+
+<% layout('../base.ejs') -%>
+
+<div class="container w-100 min-h-screen flex justify-center items-center bg-slate-200">
+    
+    <div class="form flex flex-col justify-around bg-white w-[400px] h-[300px] p-4 rounded-xl" >
+        <h3 class="text-center font-bold drop-shadow-sm text-2xl">Login</h3>
+
+   <div class="inputs h-[200px] flex flex-col justify-around">
+    <div class="email flex flex-col">
+
+        <label for="email"  class="pb-2 font-semibold">Email</label>
+        <input type="text" id="email" class="outline-none h-10 shadow shadow-gray-500/40 p-3" autocomplete="off">
+    </div>
+    <div class="password flex flex-col pt-3">
+
+        <label for="email" class="pb-2 font-semibold">Password</label>
+        <input type="password" id="password"class="outline-none h-10 shadow shadow-gray-500/40 p-3">
+    </div>
+    <div class="flex justify-around items-center mt-5">
+        <input type="submit" value="Login"class="pt-2 pb-2 pl-5 pr-5 bg-orange-500 text-white rounded-2xl cursor-pointer font-semibold">
+        <a href="/register"> <span class="text-sm text-orange-400 cursor-pointer">Don't have account?</span></a>
+    </div>
+   </div>
+    </div>
+
+
+</div>
+
